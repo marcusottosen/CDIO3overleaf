@@ -1,0 +1,172 @@
+\documentclass[11pt,oneside,a4paper,english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+%\usepackage[latin2]{inputenc}
+\usepackage[margin=2.25cm,headheight=26pt,includeheadfoot]{geometry}
+\usepackage[danish, english]{babel}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[framed, numbered]{matlab-prettifier}
+\usepackage{changepage}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{caption}
+\usepackage{tocloft}
+\usepackage{setspace}
+\usepackage{multirow}
+\usepackage{titling}
+\usepackage{float}
+\usepackage{comment}
+\usepackage{booktabs}
+\usepackage{indentfirst}
+\usepackage{lscape}
+\usepackage{booktabs,caption}
+\usepackage[flushleft]{threeparttable}
+\usepackage[english]{nomencl}
+\usepackage{xcolor}
+\usepackage{lipsum}
+\usepackage{biblatex}
+\addbibresource{document.bib}
+\usepackage{booktabs}
+\usepackage{float}
+%\usepackage[]{apacite}
+
+% --- set footer and header ---
+\pagestyle{fancy}
+\fancyhf{}
+
+\setlength{\parindent}{2em}
+\title{CDIO 3} % to reference as \title, dont use \maketitle
+\makeatletter\let\Title\@title\makeatother
+
+
+
+\lstset{language=Matlab,
+style=Matlab-editor,
+basicstyle=\normalsize\mlttfamily,
+numbers=left,
+numberstyle={\scriptsize\color{black}},			% size of the numbers
+numbersep=0.5cm											
+}
+
+\newlist{steps}{enumerate}{1}
+\setlist[steps, 1]{leftmargin=1.5cm,label = Step \arabic*:}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+
+%\lhead{\Title}
+\rhead{\nouppercase{\rightmark}}
+\lhead{\Title}
+\rfoot{\includegraphics[height=1.25cm]{images/logo.pdf}} % right header logo
+\setlength\headheight{16pt}
+\setlength{\footskip}{50pt}
+\lhead{\Title} %rightH title
+\cfoot{\thepage}
+
+% --- End of page settings ---
+%
+%
+%
+%
+%
+%
+% --- Start på dokument ---
+
+\begin{document}
+\pagenumbering{roman} 
+\input{chapters/0_frontpage.tex}    % Viser forsiden
+
+\newpage
+\label{ch0.1}
+\input{chapters/0.1_resume} 
+
+
+\newpage
+\tableofcontents    %Printer table of contents
+\setstretch{0.95}
+
+
+
+%figur-og tabelliste
+\newpage
+\addcontentsline{toc}{section}{Figurliste}
+\listoffigures
+
+\bigskip
+%\newpage
+\addcontentsline{toc}{section}{Tabelliste}
+\listoftables
+
+
+
+\newpage
+\pagenumbering{arabic} 
+\fancyfoot[C]{Page \thepage\ of \pageref{EndOfText}}
+
+
+%kapitler
+\newpage
+\label{ch1}
+\input{chapters/1_indledning.tex} 
+
+\newpage
+\label{ch2}
+\input{chapters/2_kravspecificering} 
+
+\newpage
+\label{ch3}
+\input{chapters/3_analyse} 
+
+\newpage
+\label{ch4}
+\input{chapters/4_design} 
+
+\newpage
+\label{ch5}
+\input{chapters/5_implementation} 
+
+\newpage
+\label{ch6}
+\input{chapters/6_test} 
+
+\newpage
+\label{ch7}
+\input{chapters/7_konfiguration} 
+
+\newpage
+\label{ch8}
+\input{chapters/8_projektplan} 
+
+\newpage
+\label{ch9}
+\input{chapters/9_konklusion} 
+
+
+
+
+
+
+\label{EndOfText}
+
+\newpage
+\pagenumbering{Roman} 
+\fancyfoot[C]{Page \thepage\ af \pageref{endOfDoc}}
+
+%-- Kildehenvisninger ---
+\newpage
+\printbibliography
+
+
+%--- BILAG ---
+\newpage
+\label{bilag}
+\input{chapters/9.1_bilag}
+
+\label{endOfDoc}
+\end{document}

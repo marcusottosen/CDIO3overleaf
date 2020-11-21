@@ -1,0 +1,29 @@
+\section{Konfiguration}
+Konfigurationen sætter en række krav til system, før at det færdigudviklede matadorspil kan køres på den valgte enhed. Derudover følges der op med en guide på kompilering, installation og afvikling fra GitHub, hvis der ikke ønskes at tage brug af den medfølgende .jar fil.
+\subsection{Hardwarekrav}
+\begin{enumerate}
+\item UTF-8 skal være installeret på enheden.
+\item Enheden skal have mousepad/mus for at kunne interagere med programmet.
+\item Minimum en Pentium 2 266 MHz processor.
+\item En skærm større end 480p er nødvendigt, for at brugerne kan se GUIen.
+\end{enumerate}
+
+
+\subsection{Softwarekrav}
+\begin{enumerate}
+\item Der skal være installeret Java på enheden for at programmet fungere.
+\item Systemet skal have mindst 124 MB til rådighed på harddisken.
+\end{enumerate}
+
+
+
+\subsection{Vejledning til kompilering, installation og afvikling}
+Importering fra Git: \\
+I IntelliJ åbnes et nyt projekt fra “version control”. Som version control vælges “Git”, og følgende link til Github bruges:
+https://github.com/marcusottosen/CDIO3. \\
+Derefter skal kildekoden compiles ved at trykke på File -> Project Structure. \\
+Under “artifacts” trykkes på plusset og der vælges JAR -> Create JAR from Modules.
+Modules er “CDIO 3” og Main Class er “GUI”.\\
+
+Nu kan projektet compiles under Build -> Build Artifact, og vælge CDIO 3 -> Build. \\
+I output-mappen findes nu en “CDIO 3.jar” som kan køres på maskiner med java installeret. \cite{CDIO2}

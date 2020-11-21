@@ -1,0 +1,86 @@
+% Dette dokument er kun til hjælp til overleaf!
+
+
+
+%--- Oprettelse af nyt kapitel ---%
+% Der oprettes en ny side pr kapitel man skriver. Kapitlet bliver først vist når der er blevet henvist til det i main.tex.
+Start siden ud med \section{navn på chapter}
+
+
+%--- Sektioner ---% (Den holder selv styr på numrene) Det der skrives i {} er titlen!
+1	\section{section}               % 1
+2	\subsection{subsection}         % 1.1
+3	\subsubsection{subsubsection}   % 1.1.1
+4	\paragraph{paragraph}
+5	\subparagraph{subparagraph}
+
+
+%Skråskift, Bold etc
+\emph{din text} %italic
+
+%-- line & page break --%
+\\          % skifter linje (kan også bruge \linebreak
+\smallskip  % laver mellemrum mellem linjer
+\medskip
+\bigskip
+\linebreak[0-4] % Rykker linjen 0 til 4 linjer ned. Angiv kun 1 tal :)
+
+\vfil       %rykker resterende tekst så langt ned på siden som muligt
+
+\clearpage  % Rydder resten af siden og rykker hen på den næste
+\newpage    % Brug denne i stedet for \clearpage
+
+
+%-- Citer en kilde --%
+Skriv kilden ind i document.bib 
+Der findes @article, book, online, inbook og maange flere. Se link nedenfor.
+f.eks. 
+@online{knuthwebsite,
+    author = "Donald Knuth",
+    title = "Knuth: Computers and Typesetting",
+    url  = "http://www-cs-faculty.stanford.edu/~uno/abcde.html",
+    addendum = "(accessed: 01.09.2016)",
+    keywords = "latex,knuth"
+}
+%https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX#The_bibliography_file
+
+Citer den i teksten ved:
+\cite{china_too_many}
+eller 
+\shortcite{china_too_many}
+
+
+//Ved oprettelse af dokument, sæt "\addbibresource{document.bib}" ind i toppen.
+//\printbibliography printer bibliografien
+
+
+%-- Figur/billede --%
+% Et billede lægges ind i "images" mappen. Figurer lægges ind i figures.
+\begin{figure}[H]
+\centering
+\includegraphics[width=4cm]{navn på fil fra figures mappen}
+\caption{figurtekst her}
+\end{figure}
+
+
+%Man kan også tilføje kilde på figuren ved f.eks.:
+\caption{meget flor billede. \cite{kildehenvisning }}
+
+
+%-- Table/diagram  --% Eksempel:
+https://www.tablesgenerator.com/
+
+\begin{table}[H]
+    \centering
+    \caption{That is a table.}
+    \begin{tabular}{|c|c|c|}
+    \centering
+    \textbf{Lorem} & \textbf{Ipsum} & \textbf{Lorem [\$]} \\ \hline \hline
+1   & lipsum    & lorem     \\ \hline   
+2   & lipsum    & lorem   \\ \hline
+3   & lipsum    & lorem  
+    \end{tabular}
+    \label{tab:table1}
+\end{table}
+
+

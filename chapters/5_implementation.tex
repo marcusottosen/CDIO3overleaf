@@ -1,0 +1,29 @@
+\section{Implementation}
+Matadorspillet er udelukkende skrevet i Java og vi har benyttet os af Intellij som IDE. Matadorspillet er opbygget af klasser, som vi har benyttet Java til at lave. \\
+Der er tager brug af biblioteket Diplomitdtu:matadorgui version 3.1.7, hvilket GUIen er oprettet og bliver vist igennem. Da GUIen bliver fremvist ved hjælp af biblioteket, har vi, som programmører primært, skulle skrive logikken til spillet uden at fokusere på, hvordan det bliver vist for brugeren. Dette har vi gjort igennem 8 forskellige klasser, som sammen kommunikerer med biblioteket for at vi Matadorspillet til at fungere.
+De forskellige klasser er forklaret nedenfor.\\
+Et Javadoc til biblioteket kan findes i reference 
+\\
+Programmet består af følgende klasser:
+\subsection{Main}
+Main er en helt central klasse i programmet. Det er primært denne klasse som kommunikerer med GUIen. Derudover tager den brug af de fleste metoder fra de andre klasser. Da Main er så central i vores program, har vi valgt at oprette de fleste elementer, derunder variabler, arrays og objekter som public, så de kan tilgås fra de tilhørende klasser. Igennem kommunikation med biblioteket, bliver spillerne, spillepladen og felterne oprettet i Main.\\
+I denne klasse bliver spillets primære loop også kørt. Loopet skifter mellem de forskellige spillere, og styrer bland andet hvornår en spiller skal kaste en terning, rykke og evt. betale eller medtage penge. Når dette loop bliver brudt, er spillet slut og en taber og evt. vinner vil findes.
+
+\subsection{FeltLogik}
+\subsection{Spiller}
+\subsection{Logik}
+Logik klassen er en public klasse, som extender Main. Klassen extender main, da klassen ikke ville kunne bruges uden de oprettede elementer brugt i main, og derfor 
+\subsection{RunChanceKort}
+\subsection{ChanceKort}
+\subsection{Felter}
+\subsection{Dice}
+
+
+
+
+ 
+
+\subsection{Versionsstyring}
+Versionsstyring foregår igennem GIT ved brug af Github som fjern repository. Ved udvikling af dette projekt har vi benyttet os af flere branches til forskellige dele af projektet. Der er bl.a. blevet oprettet en \emph{udviklings branch}, som vi har benyttet til at skrive koden i. Når et stykke kode er skrevet i udviklings-branchen, har vi herefter oprettet \emph{Release branch}, hvor de forskellige dele af programmet samles sammen. Her testes der om programmet nu virker samlet og er dette tilfældet, bliver hele programmet merget ind \emph{master branch}, som nu danner baggrund for det færdig udviklet program.
+\\Derudover er der også oprettet en \emph{feature branch}, som kan benyttes til at skrive ny kode og teste forskellige scenarier, som går ud over projektbeskrivelsen, uden at det har indflydelse på det færdig skrevet kode.
+

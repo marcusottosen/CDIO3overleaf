@@ -1,0 +1,64 @@
+\subsection{Funktionelle krav}
+\subsubsection{Opsætning}
+\begin{enumerate}
+  \item Spillerne skal kunne lande på et felt og så fortsætte derfra på næste slag. 
+  \item Felterne er opbygget så spillerne går i ring på brættet.
+  \item Spillet skal kunne spilles af 2 til 4 personer.
+  \item Alle spillere skal starte med et antal penge ({\rotatebox[origin=c]{180}{\textwon}}).
+  
+  \begin{enumerate}
+      \item Ved 2 spillere skal hver spiller have 20 {\rotatebox[origin=c]{180}{\textwon}}.
+      \item Ved 3 spillere skal hver spiller have 18 {\rotatebox[origin=c]{180}{\textwon}}.
+      \item Ved 4 spillere skal hver spiller have 16 {\rotatebox[origin=c]{180}{\textwon}}.
+  \end{enumerate}
+  
+  \item Spillet skal tage brug af en GUI
+  \begin{enumerate}
+      \item Spillet skal i starten have et input felt, hvor brugeren skal angive antal personer.
+      \item Derefter skal spillet skal kun have 1 knap, som bruges til kast af terningen.
+      \item GUI'en skal vise hver spillers pengebeholdning.
+      \item GUI'en skal vise spillepladen med de forskellige felter og priser.
+      \item GUI'en skal vise, hvor de enkelte spillere befinder sig på spillepladen.
+      \item GUI'en skal vise, hvilke felter de enkelte spillere ejer.
+  \end{enumerate}
+  \item Alle felter der kan købes, skal have en pris fra 1 til 5 {\rotatebox[origin=c]{180}{\textwon}}.
+\end{enumerate}
+
+
+
+\smallskip
+\subsubsection{Spilregler}
+\begin{enumerate}
+    \item Hver spiller kaster én terning, og rykker med uret rundt det antal felter på pladen, som øjnene viser.
+    \item Hver gang der landes/passere start, modtager den enkelte spiller 2 {\rotatebox[origin=c]{180}{\textwon}}.
+    \item Landes der på et ikke-ejet felt, skal spilleren købe det.
+    \item Landes der på et felt der allerede er ejet, skal spilleren betale feltets værdi. Ejes feltet af samme spiller, gøres intet.
+    \item Landes der på et felt der allerede er ejet, og ejeren også ejer den anden ejendom i samme farve, fordobles beløbet der skal betales.
+    \item Hvis en spiller lander på "gå i fængsel" feltet, bliver spilleren flyttet til fængselsfeltet uden at passere start. Derudover mister spilleren sin næste tur, og bliver derfor sprunget over en hel omgang.
+    \item Hvis man lander på et "chance" felt, bliver et chancekort trukket.
+    
+    \item Spillet slutter når en modstander er gået fallit. 
+    \item Når spillet slutter findes vinderen, som er den spiller med flest {\rotatebox[origin=c]{180}{\textwon}}.
+\end{enumerate}
+
+
+
+\bigskip
+
+
+
+\subsection{Ikke funktionelle krav}
+\begin{enumerate}
+\subsubsection{Visuelt}
+    \item GUI'en skal have en høj grad af visualitet og brugervenlighed
+    \begin{enumerate}
+        \item Det skal være nemt for alle spillere, at finde ud af, hvordan de interagerer med spillet.
+        \item Det skal være nemt for brugerne, at trykke på knappen.
+        \item Brugerne skal tydeligt kunne se, hvor mange {\rotatebox[origin=c]{180}{\textwon}} de har.
+        \item Det skal være tydeligt for alle spillere at se, hvor samtlige spillere befinder sig på pladen.
+        \item Det skal være tydeligt for brugeren at se, hvor mange {\rotatebox[origin=c]{180}{\textwon}} hver grund koster.
+        \item Det skal være tydeligt for brugeren at se, hvilke grunde er til salg.
+    \end{enumerate}
+    \item 
+    
+\end{enumerate}
