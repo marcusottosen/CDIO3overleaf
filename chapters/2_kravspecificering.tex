@@ -16,7 +16,8 @@
   \item Spillet skal tage brug af en GUI
   \begin{enumerate}
       \item Spillet skal i starten have et input felt, hvor brugeren skal angive antal personer.
-      \item Derefter skal spillet skal kun have 1 knap, som bruges til kast af terningen.
+      \item Derefter skal spillet skal have 1 knap, som bruges til kast af terningen.
+      \item Spilleren skal kunne tage forskellige valg undervejs, når der trækkes et chancekort.
       \item GUI'en skal vise hver spillers pengebeholdning.
       \item GUI'en skal vise spillepladen med de forskellige felter og priser.
       \item GUI'en skal vise, hvor de enkelte spillere befinder sig på spillepladen.
@@ -34,7 +35,6 @@
     \item Hver gang der landes/passere start, modtager den enkelte spiller 2 {\rotatebox[origin=c]{180}{\textwon}}.
     \item Landes der på et ikke-ejet felt, skal spilleren købe det.
     \item Landes der på et felt der allerede er ejet, skal spilleren betale feltets værdi. Ejes feltet af samme spiller, gøres intet.
-    \item Landes der på et felt der allerede er ejet, og ejeren også ejer den anden ejendom i samme farve, fordobles beløbet der skal betales.
     \item Hvis en spiller lander på "gå i fængsel" feltet, bliver spilleren flyttet til fængselsfeltet uden at passere start. Derudover mister spilleren sin næste tur, og bliver derfor sprunget over en hel omgang.
     \item Hvis man lander på et "chance" felt, bliver et chancekort trukket.
     
@@ -51,7 +51,7 @@
 \subsection{Ikke funktionelle krav}
 \begin{enumerate}
 \subsubsection{Visuelt}
-    \item GUI'en skal have en høj grad af visualitet og brugervenlighed
+     \item GUI'en skal have en høj grad af visualitet og brugervenlighed
     \begin{enumerate}
         \item Det skal være nemt for alle spillere, at finde ud af, hvordan de interagerer med spillet.
         \item Det skal være nemt for brugerne, at trykke på knappen.

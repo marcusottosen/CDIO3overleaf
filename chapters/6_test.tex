@@ -1,13 +1,52 @@
 \section{Test}
-
+Vi har delt vores tests op i 2 forskellige tests. Brugertest og programtest.
+Vi har lavet en brugertest af 3 forskellige personer. Der er lavet programtest af hhv. terningens tilfældighed, chancekortenes tilfældighed samt antallet af chancekort. Derudover er der også udarbejdet en Coverage dokumentation.
 %Lav mindst tre testcases med tilhørende fremgangsmåde/testprocedure og testrapporter.
 %Lav mindst én Junit test til centrale metoder. Inkludér code coverage dokumentation.
 %Lav mindst én brugertest. Husk at brugeren skal være en der ikke kan kode.
 
+%Brugertesten skal have noget mere struktur. Se link: https://docs.google.com/presentation/d/18r62fV04K8nGgnxyOpVj277v1-kIRZUsXMRZDco-vBk/edit#slide=id.g6b636aa0b1_1_0
+
+%Brugervenlighedstest. evt. fiktiv idk
+% https://docs.google.com/presentation/d/1kR6BLZO9P_PZufOLO8ABa-TedmYmsYr75RO45S3bF4M/edit#slide=id.g6ad4536212_0_20
+%evt. bare forklar vores brugervenlighed
+
+%Gør det tydeligt hvor mange testpersoner der er, hvilken aldersgruppe og hvor meget kendskab de har til matador og IT generelt
+%Bør også noteres rollerne ved observatører 
+%Hvor lang tid tog det for dem at gennemføre spillet?
+%Blev der begået nogle fejl? Hvilke?
 
 
+%Er en performancetest mulig?
 
 \subsection{Brugertest}
+
+\subsubsection{Krav til brugertest}
+\begin{enumerate}
+    \item Observatøren må ikke vejlede før eller under testen.
+    \item Testen skal udføres af personer i forskellige aldre.
+    \item Der skal være 2-4 testpersoner i samme test.
+    \item Testpersonerne skal have en opgave, som observatøren ikke må hjælpe med.
+    \item Testbrugerne skal tænke højt under testen.
+\end{enumerate}
+
+
+\subsubsection{Testens udførelse}
+Brugertesten er lavet på en far, en mor og deres yngre datter på 12 år. 
+Spillet startes nemt og uden problemer. Alle spillere kan skrive sit navn ind i feltet og starte spillet. De første par ture går hurtigt og uden problemer, og alle spillere kan finde ud af spillet. 
+
+Da første spiller landede på et chancekort og fik valget "Ryk frem, eller tag et nyt chancekort" vælger han uden problemer, en af de 2 valgmuligheder og spillet fortsætter.
+
+Testpersonerne fik opgaven: Hvordan finder man ud af hvem der ejer de forskellige ejendomme?
+Ved at trykke lidt rundt på pladen, fandt spillerne hurtigt ud af, at man kunne trykke på felterne for at se ejeren af ejendommen. 
+
+\subsubsection{Testrapport}
+Undervejs i spillet, blev nogle få fejl opdaget. Dog ikke nogle væsentlige fejl der gjorde det umuligt at spille spillet. 
+
+Eksempelvis, når en spiller skal tage sin tur, kan man se hvis tur det er oppe i venstre hjørne. Når man derefter lander på et chancekort, forsvinder dette. Følger man ikke med i spillet eller hvis tur det er, er det ikke muligt at ikke se, hvis tur det er, før chancekortet er trukket og eventuelle valg er taget. 
+En anden småting var, at spilleren ikke kunne vælge farve på deres bil. Første gang de startede spillet, blev både moren og datteren samme farve bil. Det gjorde det svært at spille spillet, da man ikke kunne se hvem der var hvem. Dette kunne fikses ved enten at gøre det muligt for spilleren at vælge farve på bilen, eller ved at gøre det umuligt for 2 spillere at få samme farve bil. 
+
+
 
 \subsection{Programtest}
 Vi har lavet tre JUnit tests af vores version af matadorspillet. Testene tester hhv. terningens tilfældighed, chancekortene tilfældighed samt test af antallet af chancekortene.

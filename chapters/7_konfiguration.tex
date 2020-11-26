@@ -1,18 +1,26 @@
 \section{Konfiguration}
 Konfigurationen sætter en række krav til system, før at det færdigudviklede matadorspil kan køres på den valgte enhed. Derudover følges der op med en guide på kompilering, installation og afvikling fra GitHub, hvis der ikke ønskes at tage brug af den medfølgende .jar fil.
-\subsection{Hardwarekrav}
+
+\subsection{Udviklingsplatform}
+Vi har under udviklingen tager brug af programmet IntelliJ til udvikling af selve programmet. Heri er der hentet en håndfuld biblioteker for at gøre vores arbejde nemmere.\\
+Til vores projektplanlægning har vi taget brug af online-værktøjet Trello, hvor alle har haft rettigheder til, at oprette rykke og fjerne planer.\\
+Selve rapporten er udarbejdet udelukkende i LaTeX ved brug af Overleaf.
+
+\subsection{Produktionsplatform}
+\subsubsection{Hardwarekrav}
 \begin{enumerate}
-\item UTF-8 skal være installeret på enheden.
-\item Enheden skal have mousepad/mus for at kunne interagere med programmet.
+\item Enheden skal have mousepad, mus eller en touchskærm for at kunne interagere med programmet.
 \item Minimum en Pentium 2 266 MHz processor.
-\item En skærm større end 480p er nødvendigt, for at brugerne kan se GUIen.
+\item En skærm større end 480p x 480p er nødvendigt, for at brugerne kan se hele GUI'en.
 \end{enumerate}
 
 
-\subsection{Softwarekrav}
+\subsubsection{Softwarekrav}
 \begin{enumerate}
-\item Der skal være installeret Java på enheden for at programmet fungere.
+\item UTF-8 skal være installeret på enheden.
+\item Der skal være installeret Java JDK 14 på enheden.
 \item Systemet skal have mindst 124 MB til rådighed på harddisken.
+\item System skal køre Windows 10 20H2 eller macOS Mojave.
 \end{enumerate}
 
 
@@ -23,7 +31,7 @@ I IntelliJ åbnes et nyt projekt fra “version control”. Som version control 
 https://github.com/marcusottosen/CDIO3. \\
 Derefter skal kildekoden compiles ved at trykke på File -> Project Structure. \\
 Under “artifacts” trykkes på plusset og der vælges JAR -> Create JAR from Modules.
-Modules er “CDIO 3” og Main Class er “GUI”.\\
+Modules er “CDIO 3” og Main Class er “Main”.\\
 
 Nu kan projektet compiles under Build -> Build Artifact, og vælge CDIO 3 -> Build. \\
 I output-mappen findes nu en “CDIO 3.jar” som kan køres på maskiner med java installeret. \cite{CDIO2}
