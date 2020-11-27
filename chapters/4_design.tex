@@ -24,11 +24,10 @@ Vi kunne også have gjort brug af polymorfi, da vi lavede felterne. Vi valgte do
 Sekvensdiagrammet viser metodekaldene mellem forskellige objekter henover en arrangeret tidslinje. I diagrammet er der i øvrigt opmærksomhed på rækkefølgen, hvormed meddelelserne sendes til objekterne. 
 Objekterne er illustreret ved lodrette streger som f.eks. "Kast terning" og "Træk beløb fra spillers konto", desuden viser den lodrette orientation også tiden. Hvert objekt sender meddelelserne fra et objekt til et andet, hvor der er givet en operation og et paramenternavn.  
 
+\newpage
 \subsection{Brugergrænseflade}
-
 Brugergrænsefladen er måden hvorpå brugeren benytter sig af systemet. Det er netop bindleddet mellem systemet og dets brugere. Der er særligt 2 punkter som brugergrænsefladen tilbyder; Inddata og uddata. Inddata tillader brugeren at styre systemet og uddata kan informere brugeren, også kaldt feedback. Disse former for data kan f.eks.vise brugernes kommandoer og systemets svar på de givne kommandoer. Dog er brugergrænsefladen helt principielt den facade brugeren har kontakt med som tastaturet og musen.
 
-\newpage
 \subsection{GRASP-mønstre}
 
 I henhold til GRASP-mønstrene har vi forsøgt at overholde low coupling og high cohesion. Altså at koden er veldefineret i forhold til ansvarsområde, uden at være for afhængig af hinanden. Det har vi i spillet gjort ved at klasserne styrer hver deres del. Eksempelvis er Dice-klassen den samme som fra de foregående CDIO-projekter, med den éne arbejdsopgave, at stå for et tilfældigt output fra 1-6
